@@ -1,0 +1,91 @@
+#env:
+#    TERM: xterm-256color
+window:
+  # Window dimensions (changes require restart)
+  dimensions:
+    columns: 66
+    lines: 20
+  # Window padding (changes require restart)
+  padding:
+    x: 6
+    y: 6
+  # Window decorations
+  decorations: Full
+font:
+  normal:
+    family: LessPerfectDOSVGA
+  bold:
+    family: LessPerfectDOSVGA
+    style: regular
+  size: 10.0
+  # Offset is the extra space around each character. offset.y can be thought of
+  offset:
+    x: 0
+    y: 0
+scrolling:
+  # ablescrolling.
+  history: 100
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+# Colors (Gruvbox dark)
+colors:
+  primary:
+    # hard contrast background - '#1d2021'
+    background: '#BCBCBC'
+    # soft contrast background - '#32302f'
+    foreground:        '#57233A'
+    #foreground:        '#121212'
+    bright_foreground: '#121212'
+    dim_foreground:    '#121212'
+   # Normal colors
+  normal:
+    black:   '#121212'
+    red:     '#D65A50'
+    green:   '#A13E97'
+    yellow:  '#ECD4D4'
+    blue:    '#280E3B'
+    magenta: '#747BA9'
+    cyan:    '#632A7E'
+    white:   '#f7f7f7'
+
+  # Bright colors
+  bright:
+    black:   '#121212'
+    red:     '#990036'
+    green:   '#127436'
+    yellow:  '#b28985'
+    blue:    '#280E3B'
+    magenta: '#c8b6e8'
+    cyan:    '#69abc0'
+    white:   '#f7f7f7'
+
+  # Dim colors
+  dim:
+    black:   '#121212'
+    red:     '#c8b6e8'
+    green:   '#5a9c9a'
+    yellow:  '#946240'
+    blue:    '#feff8f'
+    magenta: '#baa3d1'
+    cyan:    '#91e1fb'
+    white:   '#ffc5be'
+cursor:
+  # Cursor style
+  style: Underline
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  unfocused_hollow: true
+    #shell:
+    #program: /usr/local/bin/fish
+mouse:
+  #Click settings
+    double_click: { threshold: 300 }
+    triple_click: { threshold: 300 }
+  # If this is `true`, the cursor is temporarily hidden when typing.
+    hide_when_typing: true
+  # URL launcher
+  #selection:
+    semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+    save_to_clipboard: true
+# Background opacity
+background_opacity: 1
