@@ -1,2 +1,29 @@
-Language:        Cpp
+Language:      Cpp
 BasedOnStyle:  LLVM
+# 連續賦值時，對齊所有等號
+AlignConsecutiveAssignments: true
+# 連續宣告時，對齊所有宣告的變數名稱
+AlignConsecutiveDeclarations: true
+# 允許短的函數放在同一行: None, InlineOnly, Empty, Inline, All
+AllowShortFunctionsOnASingleLine: Empty
+# 在大括號前換行: Attach(始終將大括號附加到周圍的上下文), Linux(除函數、命名空間和類定義，與Attach類似), 
+#   Mozilla(除枚舉、函數、記錄定義，與Attach類似), Stroustrup(除函數定義、catch、else，與Attach類似), 
+#   Allman(總是在大括號前換行), GNU(總是在大括號前換行，並對於控制語句的大括號增加額外的縮進), WebKit(在函數前換行), Custom
+#   註：這裏認為語句塊也屬於函數
+BreakBeforeBraces: 	Linux
+# 每行字符的限制，0表示沒有限制
+ColumnLimit: 0
+# 縮進寬度
+IndentWidth: 8
+# 訪問說明符（public、private…）的偏移
+AccessModifierOffset: -8
+# 指針和引用的對齊: Left, Right, Middle
+PointerAlignment:	Right
+# 在尾隨的評論前添加的空格數(只適用於//)
+SpacesBeforeTrailingComments:	4
+# 在容器(ObjC和JavaScript的數組和字典等)字面量中添加空格
+SpacesInContainerLiterals:	true
+# tab 寬度
+TabWidth: 8
+# 使用 tab 字元: Never, ForIndentation, ForContinuationAndIndentation, Always
+UseTab:	Never 
